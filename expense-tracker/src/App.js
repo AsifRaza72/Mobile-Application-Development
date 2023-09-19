@@ -1,20 +1,19 @@
-// import ExpenseItem from "./components/ExpenseItem";
-//  import ExpenseDate from "./components/ExpensesDate";
- import Expenses from "./components/Expenses"
+import Expenses from "../src/components/Expenses/Expenses"
+ import ExpenseForm from "./components/NewExpenses/ExpenseForm";
+
+
 function App() {
-  const expenses=[
-    {title:"Car Insurance", date:new Date(2023,9,1), amount:6000},
-    {title:"Car seat", date:new Date(2023,9,11), amount:7000},
-    {title:"Car tyres",date:new Date(2023,9,12), amount:8000},
-    
-  ]
+  const expenses = [
+    { title: "Car Insurance", amount: 6000, date: new Date(2023, 9, 13) },
+    { title: "Car Seat", amount: 8000, date: new Date(2023, 9, 12) },
+    { title: "Car Tyres", amount: 9000, date: new Date(2023, 9, 11) },
+    { title: "Car Lights", amount: 10000, date: new Date(2023, 9, 10) },
+  ];
   return (
     <div>
-    <Expenses items={expenses} />
+      {<ExpenseForm/> }
+     <Expenses items = {expenses}></Expenses>
     </div>
-    
-  
   );
 }
-
 export default App;

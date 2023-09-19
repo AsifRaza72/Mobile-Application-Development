@@ -1,5 +1,7 @@
-import ExpenseItem from "./ExpenseItem";
-import "./Expenses.css"
+import ExpenseItem from "../Expenses/ExpenseItem";
+import "../Expenses/Expenses";
+import "../Expenses/Expenses.css"
+
 function Expenses(props){
     return(
         <div className="expenses">
@@ -15,4 +17,4 @@ function Expenses(props){
     </div>
     );
 }
-export default Expenses
+export default Expenses;
